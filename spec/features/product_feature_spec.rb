@@ -1,3 +1,4 @@
+Learn more or give us feedback
 require 'rails_helper'
 
 RSpec.describe "Product Index", type: :feature do
