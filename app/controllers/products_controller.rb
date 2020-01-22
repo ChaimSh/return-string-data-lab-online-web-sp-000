@@ -15,9 +15,15 @@ class ProductsController < ApplicationController
   end
 
   def inventory
+     response = "false"
+     product = Product.find(params[:id]
+     response = "true" if response.inventory > 0
+     render plain: response
   end
 
   def description
+    product = Product.find(params[:id])
+    render plain: product.description
   end
 
   private
